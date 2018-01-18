@@ -27,9 +27,5 @@ func _process(delta):
 		self.translate(displacement * _forward)
 		self._animPlayer.advance(-delta)
 	else:
-	 	print("else");
-	# 	self._animPlayer.stop();
-		#else if(Input.IsActionJustReleased(MOVE_BACK))
-#    {
-#        this._animPlayer.Seek(0, true)
-#    }
+	 	print("else")
+	 	self._animPlayer.seek(0, true)
